@@ -1,0 +1,11 @@
+{
+  "name": "Solo-project",
+  "version": "1.0",
+  "description": "Book surfer",
+
+  "author": "Phoenix Newman",
+  "repository": {
+    "type" : "Git",
+    "url" : 
+  }
+}

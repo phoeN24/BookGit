@@ -1,19 +1,13 @@
 //parent of serches
-
 import React from "react";
-import searches from './src/compnents/Searches'
-
+import AuthorSearches from "./src/compnents/authorSearch";
+import TitleSearch from "./src/compnents/titleSearch";
 const App = props => {
     return(
       <div className="router">
-        <main>
-            <Route 
-              exact path="/"
-              component={searches}
-            />
-        </main>
+        <AuthorSearches />
+        <TitleSearch />
       </div>
-
     )
 }
 

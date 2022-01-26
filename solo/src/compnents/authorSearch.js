@@ -19,14 +19,4 @@ const AuthorSearches = () => {
   )
 }
 
-const TitleSearch = () => {
-
-  return(
-    <div>
-      <div>Search by Title</div>
-      
-    </div>
-  )
-}
-
 export default AuthorSearches;

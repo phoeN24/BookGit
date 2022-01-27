@@ -5,9 +5,11 @@ const TitleSearch = () => {
 
   return(
     <div>
-      <div>Search by Title</div>
-      <input type='text' placeholder="Title"></input>
-      <button name="AS" type="button"> search</button>
+        <div id='SBT'> 
+          <form> Search by Title</form>
+          <input id='TI' type='text' placeholder="Title"></input>
+        <button name="TS" type="button"> search</button>
+        </div>
     </div>
   )
 }

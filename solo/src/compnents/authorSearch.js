@@ -11,11 +11,14 @@ const AuthorSearches = () => {
 
   return (
     <div>
-      <div>Search By Author</div>
-      <input type='text' placeholder="Author Last Name"></input>
-      <input type='text' placeholder="Author First Name"></input>
-      <button name="AS" type="button"> search</button>
-    </div>
+        <div ig='SBA'>
+          <form>Search By Author</form>
+          <input id='ALSin' type='text' placeholder="Author Last Name"></input>
+          <input id='AFNin' type='text' placeholder="Author First Name"></input>
+          <button name="AS" type="button"> search</button>
+        </div> 
+      </div>
+      
   )
 }
 

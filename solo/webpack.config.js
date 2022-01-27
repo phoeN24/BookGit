@@ -11,7 +11,7 @@ module.exports = {
   module:{
     rules: [
       {
-        test: /\.?js$/,
+        test: /\.?js$/, 
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -19,6 +19,11 @@ module.exports = {
             presets: ['@babel/preset-env', '@babel/preset-react']
           }
         },
+
+      },
+      {
+        test: /\.css$/i,
+        use:["style-loader", "css-loader"],
       },
     ]
   },
@@ -34,7 +39,5 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'public'),
     },
-    compress: true,
-    port:3000,
   }
 };

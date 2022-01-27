@@ -15,7 +15,7 @@ const AuthorSearches = () => {
           <form>Search By Author</form>
           <input id='ALSin' type='text' placeholder="Author Last Name"></input>
           <input id='AFNin' type='text' placeholder="Author First Name"></input>
-          <button name="AS" type="button"> search</button>
+          <button id="AS" type="button"> search</button>
         </div> 
       </div>
       

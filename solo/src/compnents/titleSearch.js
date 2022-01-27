@@ -8,7 +8,7 @@ const TitleSearch = () => {
         <div id='SBT'> 
           <form> Search by Title</form>
           <input id='TI' type='text' placeholder="Title"></input>
-        <button name="TS" type="button"> search</button>
+        <button id="TS" type="button"> search</button>
         </div>
     </div>
   )

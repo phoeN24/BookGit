@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Neonderthaw&family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gloria+Hallelujah&family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap');
+
 
 body {
   margin: 20%;
@@ -14,13 +18,18 @@ h1{
   margin-bottom: 5px;
   text-align: center;
   color: rgb(18, 116, 117);
+  font-family: 'Special Elite', cursive;
+  font-size: 50px;
 }
 div{
   color:rgb(86, 44, 44);
+  font-family: 'Architects Daughter', cursive;
+  font-size: 17px;
 }
 #SBA{
   margin-top: 5px;
   margin-bottom: 0px;
+
 }
 #SBT{
   margin-top: 5px;
@@ -35,22 +44,72 @@ div{
   border-style: solid;
   border-width: 1px;
   border-color: rgb(18, 116, 117);
+  font-family: 'Amatic SC', cursive;
+  font-size: 13pt;
+  text-align: center;
+  border-radius: 5px
 }
 #AFNin{
+  margin-left: 3px;
   background-color: rgb(226, 196, 147);
   border-style: solid;
   border-width: 1px;
   border-color: rgb(18, 116, 117);
+  font-family: 'Amatic SC', cursive;
+  font-size: 13pt;
+  text-align: center;
+  border-radius: 5px;
 }
 #TI{
   background-color: rgb(226, 196, 147);
   border-style: solid;
   border-width: 1px;
   border-color: rgb(18, 116, 117);
+  font-family: 'Amatic SC', cursive;
+  font-size: 13pt;
+  text-align: center;
+  border-radius: 5px
 }
 #GI{
   background-color: rgb(226, 196, 147);
   border-style: solid;
   border-width: 1px;
   border-color: rgb(18, 116, 117);
+  font-family: 'Amatic SC', cursive;
+  font-size: 13pt;
+  text-align: center;
+  border-radius: 5px
+}
+#AS{
+  padding: 1px;
+  margin-left: 3px;
+  font-family:  'Architects Daughter', cursive;
+  background-color: rgb(242, 84, 45) ;
+  color: rgb(32, 19, 19);
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 11pt;
+  text-align: center;
+}
+#TS{
+  padding: 1px;
+  margin-left: 3px;
+  font-family:  'Architects Daughter', cursive;
+  background-color: rgb(242, 84, 45) ;
+  color: rgb(32, 19, 19);
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 11pt;
+  text-align: center;
+}
+#GS{
+  padding: 1px;
+  margin-left: 3px;
+  font-family:  'Architects Daughter', cursive;
+  background-color: rgb(242, 84, 45) ;
+  color: rgb(32, 19, 19);
+  border-radius: 5px;
+  border-width: 0px;
+  font-size: 11pt;
+  text-align: center;
 }

@@ -8,7 +8,7 @@ const GenreSearches = () => {
         <div id ='SBG'>
           <form>Search By Genre</form>
           <input id='GI' type='text' placeholder="Genre"></input>
-         <button name="GS" type="button"> search</button>
+         <button id="GS" type="button"> search</button>
         </div>
       </div>
   )

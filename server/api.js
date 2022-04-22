@@ -1,7 +1,7 @@
 // handles requests to api and posts to src
 const express = require('express');
 
-const dataController = require('./controllers');
+const {searchController, userController} = require('./controllers');
 
 const router = express.Router();
 
@@ -21,7 +21,7 @@ fetch("https://www.googleapis.com/books/v1/volumes?q=search+terms", {
 });
 
 router.get('/*',
-dataController.getAuthor,
+searchController.getAuthor,
 (req,res) => res.status(200).json()
 .then(console.log(req.body))
 )

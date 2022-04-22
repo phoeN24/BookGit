@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
+  mode: process.env.NODE_ENV,
   entry: path.resolve(__dirname, './src/index.js'),
   output: {
     path:path.resolve(__dirname, 'dist'),
@@ -29,6 +29,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      title: "development",
       template: path.join(__dirname,'./src/index.html'),
     }),
   ],
@@ -37,7 +38,10 @@ module.exports = {
       '/api': 'http://localhost:3000'
     },
     static: {
-      directory: path.join(__dirname, 'public'),
+      publicPath: '/dist',
+      directory: path.join(__dirname, 'dist'),
     },
+    historyApiFallback: true,
+    hot: true,
   }
 };

@@ -9,7 +9,8 @@ const userController = {};
 userController.newUser = async (req, res, next) => {
   const {name, username: username, email: email, password: password} = req.query;
   try {
-    //check if username exists
+    //check if username exists, if yes sets auth.valid to false and returns next
+    //if username isnt in use, sets auth.valid to true and stores user data to db
     const checkQuerystr = `SELECT * FROM Users WHERE username = $1`;
     const checkResult = await db.query(checkQuerystr, [username]);
   
@@ -39,6 +40,7 @@ userController.newUser = async (req, res, next) => {
 userController.auth = async (req, res, next) => {
   const {username: username, password: password } = req.query;
   try{
+    //check if username and password match
     const queryStr = `SELECT * FROM Users WHERE username=$1`;
     const queryResult = await db.query(querystr, [username]);
     if(!queryResult.rows.length || queryResult.rows[0].password !== password){

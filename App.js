@@ -1,8 +1,8 @@
 //parent of serches
 import React from "react";
-import AuthorSearches from "./src/compnents/authorSearch";
-import GenreSearches from "./src/compnents/genreSearch";
-import TitleSearch from "./src/compnents/titleSearch";
+import AuthorSearches from "./src/components/authorSearch";
+import GenreSearches from "./src/components/genreSearch";
+import TitleSearch from "./src/components/titleSearch";
 const App = props => {
     return(
       <div className="router">
